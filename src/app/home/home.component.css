@@ -1,0 +1,353 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-position: 0%;
+}
+
+#main {
+    min-height: 300vh;
+    width: 100%;
+    position: relative;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+
+}
+
+nav {
+    height: 5vh;
+    width: 100%;
+    background-color: transparent;
+    z-index: 99;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 45px;
+    gap: 20px;
+
+}
+
+nav img {
+    height: 90px;
+    width: 160px;
+    background: transparent;
+    border-radius: 10%;
+    margin-top: 30px;
+}
+
+nav h4 {
+    color: aliceblue;
+    font-weight: 900;
+    font-size: 1.3em;
+    padding-top: 12px;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#cursor {
+    background-color: rgb(226, 236, 25);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 1000;
+}
+
+#cursor-blur {
+    height: 270px;
+    width: 280px;
+    background-color: rgb(38, 143, 6);
+    filter: blur(90px);
+    z-index: 4;
+    border-radius: 50%;
+    position: fixed;
+    transition: ease all 2s;
+}
+
+#main #login {
+    height: 350px;
+    width: 320px;
+    background-color: #fff;
+    position: fixed;
+    top: 25%;
+    left: 40%;
+    z-index: 999;
+    border-radius: 20%;
+        /* opacity:0; */
+}
+#login #ic{
+    height:25px;
+    width: 25px;
+    position: absolute;
+    top:5%;
+    left: 70%;
+    background-color: cornflowerblue;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+}
+#page1 {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 9;
+    /* padding: 35vh 45vh; */
+    min-height: 120vh;
+    width: 100%;
+    top: 10%;
+    padding:22vh 
+}
+
+#page1 #ctext {
+    height: 80vh;
+    width: 60%;
+    margin-top: 10%;
+    /* position: absolute;
+    top: 30%;
+    left: 20%; */
+}
+
+#page1 h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+    font-size: 3rem;
+    position: relative;
+
+}
+
+#page1 h1::before {
+    content: "Your Vehicle's Sanctuary, Our Garage Expertise.";
+    color: rgb(0, 55, 255);
+    position: absolute;
+    top: 3%;
+    left: -1%;
+    text-align: center;
+    z-index: -1;
+    font-weight: 800;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-text-stroke: 2px rgb(0, 177, 104);
+
+}
+
+#page1 h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+
+}
+
+#page1 #desc {
+    width: 90%;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    margin-top: 15px;
+
+}
+
+#desc p {
+    text-align: center;
+    position: absolute;
+    top: 8%;
+    left: 15%;
+    margin-top: 5px;
+    font-weight: 800;
+    font-size: 1.4rem;
+    font-family: 'Montserrat', 'sans-serif';
+    color: #fff;
+
+}
+
+#page2 {
+    height: 60vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+
+#page2 #scroller {
+    height: 20vh;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    z-index: 9;
+}
+
+#page2 #scroller-in h2 {
+    color: transparent;
+    font-size: 4.8rem;
+    font-weight: 900;
+    -webkit-text-stroke: 2px greenyellow;
+    z-index: 9;
+    transition: all linear 0.4s;
+    display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#page2 #scroller-in {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    animation-name: yash;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: relative;
+    white-space: nowrap;
+
+}
+
+
+
+#page2 #scroller-in h2:hover {
+    color: rgb(34, 227, 34);
+}
+
+#page2 #about-us {
+    height: 30vh;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    position: relative;
+    flex-wrap: wrap;
+    top: 30%;
+}
+
+#page2 #about-us img {
+    height: 160px;
+    width: 160px;
+    border-radius: 8px;
+    margin-top: 60px;
+}
+
+#page2 #about-us h2 {
+    position: absolute;
+    top: 2%;
+    font-size: 1.8rem;
+    margin-top: -14px;
+
+}
+
+#page2 #about-us p {
+    width: 50%;
+    text-align: center;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 2rem;
+    margin-top: 8px;
+    height: 60%;
+}
+
+#main #page3 {
+    height: 35vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    position: absolute;
+    top: 80%;
+}
+
+#page3 #box {
+    height: 300px;
+    width: 300px;
+    opacity: 1;
+    position: relative;
+    border-radius: 50%;
+}
+
+#page3 #box img {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    border-radius: 50%;
+    transition: all ease 0.10s;
+
+}
+
+#page3 #box #overlay {
+    height: 300px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    background-color: rgb(26, 255, 0);
+    opacity: 0;
+    position: absolute;
+    border-radius: 50%;
+    transition: all ease 0.10s;
+
+
+}
+
+#overlay h2 {
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    bottom: 10%;
+    left: 17%;
+}
+
+#overlay p {
+    width: 80%;
+    height: 15%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 16%;
+    border-radius: 50%;
+    left: 14%;
+}
+
+#page3 #box #overlay:hover {
+    opacity: 1;
+    transition: all ease 0.10s;
+
+}
+
+
+@keyframes yash {
+    from {
+        transform: translateX(0);
+    }
+
+
+
+    to {
+        transform: translateX(-100%);
+    }
+
+
+
+}

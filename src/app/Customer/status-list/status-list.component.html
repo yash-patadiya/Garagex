@@ -1,0 +1,27 @@
+<!-- <app-header></app-header> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="head"><app-header></app-header></div>
+    <div id="main">
+         <div id="side" ><div class="d-flex"><i class="fa-solid fa-bars" id="Menu"></i><label style="display: none; margin-left: 20px;" id="d1">Menu</label></div><br>
+         <div class="d-flex"><i class="fa-solid fa-square-poll-horizontal" routerLink="/status"></i><label for="" style="display: none; margin-left: 20px;" id="d2">Appointment Status</label></div>
+         <br><div class="d-flex"><i class="fa-solid fa-user-pen" routerLink="/edit-profile"></i><label for="" style="display: none; margin-left: 20px;" id="d3">Edit Profile</label></div>
+
+         </div>
+        <div id="page1">
+        <div id="client">  
+                <!-- <span><h1>Garages Service List</h1></span> -->
+   <router-outlet></router-outlet>
+
+    </div>
+    </div>
+</div>
+</body>
+</html>
+<!---->

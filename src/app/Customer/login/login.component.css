@@ -1,0 +1,6 @@
+.col-8{
+    background-image:url('/assets/Part1.jpg');
+    height: 120vh;
+    background-size: 100% 100%;
+    padding: 50vh 25vh;
+}

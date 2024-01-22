@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+
+form {
+    /* position: absolute; */
+    /* top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(174, 234, 237); */
+    /* padding: 5vh; */
+    height: 100%;
+    width: 100%;
+    /* gap: 25px; */
+}

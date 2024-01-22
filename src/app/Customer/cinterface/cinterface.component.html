@@ -1,0 +1,61 @@
+<html>
+<head>
+<script src="https://kit.fontawesome.com/e0e20dfbe5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class='container-fluid '>
+<div class='row'>
+<div class='col-md-3'>
+<div class='capation mb-5 mt-3 ml-3'>Garagex | User</div>
+<div class='uprofile mt-5'><i class="fa-solid fa-user-secret i fa-3x"></i>
+<div class='uname font-weight:bold'>John Doe</div>
+<div class='label'>Garagex User</div>
+ <div class='dashboard' style='margin-left:2vh;margin-top:1.8vh'><div routerLink="/dashboard"><i class="fa-solid fa-desktop">&nbsp; &nbsp;Dashboard</i></div>
+ <div class="dropdown mt-4 " style='margin-left:0.2vh;'>
+  <i class="fa-solid fa-database"></i>
+
+  <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Services
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item">Service Requests</a></li>
+    <li><a class="dropdown-item"routerLink="/enquiry">Service History</a></li>
+  </ul>
+</div>
+
+</div>
+</div>
+</div>
+<div class='col-md-9 position-relative' style='padding:30vw; height:100%; background-color:lightblue '>
+  <div class="row position-absolute" style="bottom:60vw; left:48vw "><div class="btn-group">
+      <i class="fa-solid fa-user-secret fa-2x mr-2"></i>&nbsp;
+     <button type="button" class="btn btn-danger dropdown-toggle ml-3" data-bs-toggle="dropdown" aria-expanded="false">
+    John Doe
+   </button>
+    <ul class="dropdown-menu ">
+    <li><a class="dropdown-item" href="#">
+         <i class="fa-solid fa-user-tie"></i>  My Profile </a></li>
+     <li><a class="dropdown-item" href="#">
+     <i class="fa-solid fa-gear"></i> Change Password </a></li>
+     <li><a class="dropdown-item" href="#"><i class="fa-solid fa-power-off"></i>Logout</a></li>
+   </ul>
+  </div>
+</div>
+    <div class="row w-100">  
+              <div class="col-md-12">
+                <hr style="border-width:2px;border-spacing:20px; color: black;margin-top: -21vw; margin-left: -24vh;margin-bottom: 2vw;" class="position-relative w-100">
+
+                </div>
+            </div>
+
+    <div class="row" style="margin-top: 80px;">
+        <div class="col-md-8 position-static" style="bottom: 80%;">
+      <router-outlet></router-outlet>
+      </div>
+</div>
+
+</div>
+
+</div>
+</div>
+</body>
