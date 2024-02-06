@@ -4,45 +4,44 @@
         <div class="col-4" style="background-color: rgba(0, 0, 0, 0.494);">
              <div style="border-bottom: 2px solid rgb(251, 251, 251);align-items: center; justify-content: center; display: flex;padding:2px 5px;"><h1 style="color: blue;">Customer | Signup</h1></div>
             <div class="align-items-center justify-content-center d-flex "style="height:100vh;">
-            <form class="form-center">
-
+            <form class="form-center" method="post" [formGroup]="myForm" (ngSubmit)="onSubmit()">
             <div class="row gap-1 mb-3 mt-5">
                 
                 <div class="col-6  flex-column">
                 <label for="name" style="color: beige;"><i class="fa-sharp fa-solid fa-user" style="margin-left:1vh;margin-right: 1vh;"></i>Name</label> </div> 
-                <div class="col-md-8 ml-5"><input type='text' class="form-control" id="name" required/></div>
+                <div class="col-md-8 ml-5"><input type='text' class="form-control" id="name" formControlName="name"/></div>
             </div>
            
           
              <div class="row gap-1 mb-3 mt-5 text-align-center">
                 
                 <div class="col-6  flex-column">
-                <label for="name" style="color: beige;"><i class="fa-solid fa-mobile" style="margin-left:1vh;margin-right: 1vh;"></i>Mobile Number</label> </div> 
-                <div class="col-md-8 ml-5"><input type='number' class="form-control" id="name" required/></div>
+                <label for="number" style="color: beige;"><i class="fa-solid fa-mobile" style="margin-left:1vh;margin-right: 1vh;"></i>Mobile Number</label> </div> 
+                <div class="col-md-8 ml-5"><input type='number' class="form-control" id="number" formControlName="number" required/></div>
             </div>
                      <div class="row gap-1 mb-3 mt-5 text-align-center">
                 
                 <div class="col-6  flex-column">
-                <label for="name" style="color: beige;"><i class="fa-solid fa-envelope" style="margin-left:1vh;margin-right: 1vh;"></i>Email Address</label> </div> 
-                <div class="col-md-8 ml-5"><input type='email' class="form-control" id="name" required/></div>
+                <label for="email" style="color: beige;"><i class="fa-solid fa-envelope" style="margin-left:1vh;margin-right: 1vh;"></i>Email Address</label> </div> 
+                <div class="col-md-8 ml-5"><input type='email' class="form-control" id="email" formControlName="email" required/></div>
             </div>
              <div class="row gap-1 mb-3 mt-5 text-align-center">
                 
                 <div class="col-6  flex-column">
-                <label for="name" style="color: beige;"><i class="fa-solid fa-key" style="margin-left:1vh;margin-right: 1vh;"></i>Password</label> </div> 
-                <div class="col-md-8 ml-5"><input type='password' class="form-control" id="name" required/></div>
+                <label for="password" style="color: beige;"><i class="fa-solid fa-key" style="margin-left:1vh;margin-right: 1vh;"></i>Password</label> </div> 
+                <div class="col-md-8 ml-5"><input type='password' class="form-control" id="password" formControlName="password"/></div>
             </div>
 
                       <div class="row gap-1 mb-3 mt-5 text-align-center">
                 
                 <div class="col-6  flex-column">
-                <label for="name" style="color: beige;"><i class="fa-solid fa-key" style="margin-left:1vh;margin-right: 1vh;"></i>Re-Password</label> </div> 
-                <div class="col-md-8 ml-5"><input type='password' class="form-control" id="name" required/></div>
+                <label for="repassword" style="color: beige;"><i class="fa-solid fa-key" style="margin-left:1vh;margin-right: 1vh;"></i>Re-Password</label> </div> 
+                <div class="col-md-8 ml-5"><input type='password' class="form-control" id="repassword" formControlName="repassword"/></div>
             </div>
 
             <div class="row mt-4">
-                <div class="col-md-12">
-                <button type="submit" style="border: none; background-color: lightgreen; border-radius: 2px;" (click)="Ro()">Submit</button>
+                <div class="col-md-12 bg-primary d-flex position-relative">
+                <button type="submit" style="border: none; background-color: lightgreen; border-radius: 2px;width: 50%; position: absolute;top: 10%;left: -5%;" (click)="Ro()">Submit</button>
                 </div>
             </div>
             </form>

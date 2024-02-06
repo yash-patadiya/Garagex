@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-service-form',
   templateUrl: './service-form.component.html',
@@ -12,7 +12,10 @@ A:number =0
      event.preventDefault();
   this.showRouter = !this.showRouter;
 }
-
+constructor(private router:Router){}
+  onClick(){
+   this.router.navigate(['GLogin'])
+  }
 
     }
 

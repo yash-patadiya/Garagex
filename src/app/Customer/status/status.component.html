@@ -7,13 +7,14 @@
 </head>
 <body>
     <div class="hw " style="justify-content: center;">
+       <div style="height:100vh;width: 60vh;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);overflow-x: auto;"  [hidden]="!showService"><router-outlet></router-outlet></div>
                 <div class="container-fluid align-items-center  d-column  " style="justify-content: center;">
                             <div class="row mt-5 " style="font-size: 1.5rem;"><h1>Garage Owner</h1></div>
 
        <div class="row  mt-5 w-100 mb-3" style="margin-left:4px; margin-top:10px; background-color: antiquewhite;" ><div class="col-2">Yash Patadiya</div><div class="col-2 flex-column"><span>Date</span><br><span class="d-flex">15-12-2023</span></div>
        <div class="col-2 flex-column"><span >Time</span><br><span style="font-size: 11px;">10:00 AM -11:00 AM</span></div>
        <div class="col-2 flex-column"><span>status</span><br><span style="color:green">Approved</span></div>
-       <div class="col-2" style="cursor: pointer;"><span style="color:rgb(11, 106, 147)">Details</span>&nbsp;&nbsp;<i class="fa-solid fa-arrow-right" style="color:blue;cursor: pointer;"></i>
+       <div class="col-2" style="cursor: pointer;"><span style="color:rgb(11, 106, 147)" routerLink="/Glist" (click)="on()" >Details</span>&nbsp;&nbsp;<i class="fa-solid fa-arrow-right" style="color:blue;cursor: pointer;"></i>
 </div>
 </div>
        <div class="row mt-5 w-100 mb-3" style="margin-left:4px; margin-top:10px;background-color: aliceblue;" ><div class="col-2">Yash Patadiya</div><div class="col-2 flex-column"><span>Date</span><br><span class="d-flex">15-12-2023</span></div>

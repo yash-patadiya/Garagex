@@ -1,13 +1,16 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html,body{
-    min-height:140vh;
+
+html,
+body {
+    min-height: 140vh;
     width: 100%;
 }
-body{
-    background-color: aqua;
+
+body {
+    /* background-color: aqua; */
     padding: 20px;
 }

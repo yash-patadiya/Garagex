@@ -19,6 +19,14 @@ import { StypeComponent } from './GarageOwner/stype/stype.component';
 import { SDetailsComponent } from './GarageOwner/s-details/s-details.component';
 import { AddserviceComponent } from './Customer/addservice/addservice.component';
 import { ServiceFormComponent } from './GarageOwner/service-form/service-form.component';
+import { GHomeComponent } from './GarageOwner/ghome/ghome.component';
+import { GLoginComponent } from './GarageOwner/glogin/glogin.component';
+import { GAppointmentComponent } from './GarageOwner/gappointment/gappointment.component';
+import { GContactComponent } from './GarageOwner/gcontact/gcontact.component';
+import { GEditProfileComponent } from './GarageOwner/gedit-profile/gedit-profile.component';
+import { GProfileComponent } from './GarageOwner/gprofile/gprofile.component';
+import { GFeedbackComponent } from './GarageOwner/gfeedback/gfeedback.component';
+import { StatusListComponent } from './Customer/status-list/status-list.component';
 const routes: Routes = [
   { path: 'Home', component: HomeComponent },
   { path: 'header', component: HeaderComponent },
@@ -26,7 +34,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'CustomerHome', component: HpageComponent },
   { path: 'GarageList', component: GInterComponent },
-  {path:'GarageDetails',component:GListComponent},
+  { path: 'GarageDetails', component: GListComponent },
   { path: 'enquiry', component: EnquiryComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'status', component: StatusComponent },
@@ -39,6 +47,14 @@ const routes: Routes = [
   { path: 'service-type', component: StypeComponent },
   { path: 's-details', component: SDetailsComponent },
   { path: 'AddServices', component: AddserviceComponent },
+  { path: 'Garage', component: GHomeComponent },
+  { path: 'GLogin', component: GLoginComponent },
+  { path: 'Gappoint', component: GAppointmentComponent },
+  { path: 'Gcontact', component: GContactComponent },
+  { path: 'GEdit', component: GEditProfileComponent },
+  { path: 'Gpro', component: GProfileComponent },
+  { path: 'GFeed', component: GFeedbackComponent },
+  { path: 'Glist', component: DetailsComponent },
   { path: '**', component: HomeComponent }
 ];
 

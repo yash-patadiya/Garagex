@@ -25,6 +25,23 @@ import { StypeComponent } from './GarageOwner/stype/stype.component';
 import { LiserviceComponent } from './GarageOwner/liservice/liservice.component';
 import { SDetailsComponent } from './GarageOwner/s-details/s-details.component';
 import { AddserviceComponent } from './Customer/addservice/addservice.component';
+import { GnavbarComponent } from './GarageOwner/gnavbar/gnavbar.component';
+import { GHomeComponent } from './GarageOwner/ghome/ghome.component';
+import { GProfileComponent } from './GarageOwner/gprofile/gprofile.component';
+import { GEditProfileComponent } from './GarageOwner/gedit-profile/gedit-profile.component';
+import { GAppointmentComponent } from './GarageOwner/gappointment/gappointment.component';
+import { GFeedbackComponent } from './GarageOwner/gfeedback/gfeedback.component';
+import { GContactComponent } from './GarageOwner/gcontact/gcontact.component';
+import { GLoginComponent } from './GarageOwner/glogin/glogin.component';
+import { AHomeComponent } from './Admin/ahome/ahome.component';
+import { NavbarComponent } from './Admin/navbar/navbar.component';
+import { ACustomerComponent } from './Admin/acustomer/acustomer.component';
+import { AGarageownerComponent } from './Admin/agarageowner/agarageowner.component';
+import { AProfileComponent } from './Admin/aprofile/aprofile.component';
+import { AEditProfileComponent } from './Admin/aedit-profile/aedit-profile.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,10 +66,26 @@ import { AddserviceComponent } from './Customer/addservice/addservice.component'
     StypeComponent,
     LiserviceComponent,
     SDetailsComponent,
-    AddserviceComponent  ],
+    AddserviceComponent,
+    GnavbarComponent,
+    GHomeComponent,
+    GProfileComponent,
+    GEditProfileComponent,
+    GAppointmentComponent,
+    GFeedbackComponent,
+    GContactComponent,
+    GLoginComponent,
+    AHomeComponent,
+    NavbarComponent,
+    ACustomerComponent,
+    AGarageownerComponent,
+    AProfileComponent,
+    AEditProfileComponent  ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
