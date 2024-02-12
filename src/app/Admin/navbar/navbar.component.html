@@ -1,19 +1,62 @@
-<header class="text-gray-400 bg-gray-900 body-font">
-  <div class="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
-      <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-          <!-- Replace the text with your logo image or SVG code -->
-          <img src="./assets/g.jpeg"  class="w-20 h-20 p-2  thumbnail-full">
-          <!-- Alternatively, if you have an SVG logo, you can use it directly -->
-          <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-          </svg> -->
-          <span class="ml-3 text-xl">GarageX</span>
-      </a>
-      <nav class="md:ml-auto flex flex-wrap items-center text-xl justify-center">
-          <a routerLink="/dashboard" routerLinkActive="active" class="mr-5 hover:text-white">Dashboard</a>
-          <a routerLink="/profile" routerLinkActive="active" class="mr-5 hover:text-white">Profile</a>
-          <!-- <a routerLink="/profile" routerLinkActive="active" class="mr-5 hover:text-white">Logout</a> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar bg-body-tertiary fixed-top" style="margin-bottom: 10px;">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+        <img src="./assets/g.jpeg" width="120" height="95">
+
+        <div class="justify-content-center">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a routerLink="/Garage" class="nav-link " aria-current="page">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+              </li>
+             </ul>
+            <button type="button" class="btn btn-primary">Logout</button>
+          </div>
+        </div>
       </nav>
-  </div>
-  
-</header>
+
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <img src="./assets/pic.jpeg" width="120" height="95">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <!-- <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a routerLink="/Gpro" class="nav-link active" aria-current="page" href="#">profile</a>
+            </li>
+
+
+          </ul>
+        </div> -->
+      </div>
+    </div>
+  </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

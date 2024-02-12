@@ -1,9 +1,17 @@
-<div class="container-fluid">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="overflow: hidden;">
+    <div class="container-fluid">
     <div class="row">
         <div class="col-8 ">1</div>
-        <div class="col-4" style="background-color: rgba(0, 0, 0, 0.494);">
-             <div style="border-bottom: 2px solid rgb(251, 251, 251);align-items: center; justify-content: center; display: flex;padding:2px 5px;"><h1 style="color: blue;">Customer | Signup</h1></div>
-            <div class="align-items-center justify-content-center d-flex "style="height:100vh;">
+        <div class="col-4" style="background-color: rgba(0, 0, 0, 0.654);">
+             <div style="border-bottom: 2px solid rgba(251, 251, 251, 0.153);align-items: center; justify-content: center; display: flex;padding:2px 5px;"><h1 style="color: rgb(250, 250, 254);">Customer | Signup</h1></div>
+            <div class="align-items-center justify-content-center d-flex "style="height:75vh;">
             <form class="form-center" method="post" [formGroup]="myForm" (ngSubmit)="onSubmit()">
             <div class="row gap-1 mb-3 mt-5">
                 
@@ -41,7 +49,7 @@
 
             <div class="row mt-4">
                 <div class="col-md-12 bg-primary d-flex position-relative">
-                <button type="submit" style="border: none; background-color: lightgreen; border-radius: 2px;width: 50%; position: absolute;top: 10%;left: -5%;" (click)="Ro()">Submit</button>
+                <button type="submit" style="border: none; background-color: #0E1314; border-radius: 50px;width: 50%; position: absolute;top: 20%;left: -5%;color: #fff;padding: 20px;" (click)="Ro()" >Submit</button>
                 </div>
             </div>
             </form>
@@ -49,3 +57,5 @@
         </div>
     </div>
 </div>
+</body>
+</html>

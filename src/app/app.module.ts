@@ -41,6 +41,7 @@ import { AProfileComponent } from './Admin/aprofile/aprofile.component';
 import { AEditProfileComponent } from './Admin/aedit-profile/aedit-profile.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './Admin/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +81,9 @@ import { HttpClientModule } from '@angular/common/http';
     ACustomerComponent,
     AGarageownerComponent,
     AProfileComponent,
-    AEditProfileComponent  ],
+    AEditProfileComponent,
+    FooterComponent,
+      ],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -1,45 +1,47 @@
 const express = require('express');
+const bodyparser = require('body-parser');
+const cors = require('cors');
 const mysql = require('mysql');
-
-
-// Enable CORS for all origins in your Node.js/Express server
-
 
 const app = express();
 
-const connection = mysql.createConnection({
+app.use(cors());
+app.use(bodyparser.json());
+
+const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: '123456789',
-  database: 'Ty'
+  database: 'Ty',
+  port: 3306
 });
-
-connection.connect(err => {
-  if (err) {
-    console.error('Error connecting to database:', err);
-    return;
-  }
-  console.log('Connected to MySQL database');
+db.connect(err => {
+  if (err) { console.log(err, 'db err'); }
+  console.log('Database connected...');
 });
+app.post('/insertData', (req, res) => {
+  console.log(req.body, 'createdata');
 
-// Define API endpoints to handle saving data to MySQL
+  let fullname = req.body.name;
+  let num = req.body.number;
+  let eMail = req.body.email;
+  let pass = req.body.password;
+  let repass = req.body.repassword;
+  let qr = `insert into Customer(Name,Mobile_Number,Email,Password,RePassword) values ('${fullname}','${num}', '${eMail}','${pass}','${repass}')`;
 
-app.post('/USER', (req, res) => {
-  const { name } = req.body;
+  db.query(qr, (err, result) => {
+    if (err) { console.log(err); }
 
-  const insertQuery = 'INSERT INTO ap (name) VALUES (?)';
-  connection.query(insertQuery, [name], (err, results) => {
-    if (err) {
-      console.error('Error saving data:', err);
-      res.status(500).send('Error saving data');
-      return;
-    }
-    res.status(200).send('Data saved successfully');
-  });
+    console.log(result, 'result');
+    res.send({
+      message: 'data inserted',
+    });
+  })
+
 });
-
-// Other necessary API endpoints
-
+app.post('/Customer', (req, res) => {
+  console.log('yash')
+});
 app.listen(3000, () => {
-  console.log('Express server running on port 3000');
-});
+  console.log('Server running..');
+});  

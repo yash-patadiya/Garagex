@@ -81,27 +81,30 @@ nav h4 {
 
 #main #login {
     height: 350px;
-    width: 320px;
+    width: 30vw;
     background-color: #fff;
     position: fixed;
     top: 25%;
-    left: 40%;
+    left: 35%;
     z-index: 999;
     border-radius: 20%;
-        /* opacity:0; */
+    /* opacity:0; */
 }
-#login #ic{
-    height:25px;
+
+#login #ic {
+    height: 25px;
     width: 25px;
     position: absolute;
-    top:5%;
-    left: 70%;
+    top: 5%;
+    right: 5%;
+    /* left: 70%; */
     background-color: cornflowerblue;
     align-items: center;
     justify-content: center;
     display: flex;
     border-radius: 50%;
 }
+
 #page1 {
     position: relative;
     align-items: center;
@@ -112,7 +115,7 @@ nav h4 {
     min-height: 120vh;
     width: 100%;
     top: 10%;
-    padding:22vh 
+    padding: 22vh
 }
 
 #page1 #ctext {

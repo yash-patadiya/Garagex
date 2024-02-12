@@ -12,7 +12,7 @@ export class RegistrationComponent implements OnInit {
   myForm!: FormGroup;
   successmsg!: string;
   errormsg!: string;
- 
+
 
 
   ngOnInit(): void {
@@ -34,20 +34,20 @@ export class RegistrationComponent implements OnInit {
     if (this.myForm.value) {
       console.log(this.myForm.value);
     }
-       this.apiservice.createNewUser(this.myForm.value).subscribe(
+    this.apiservice.createNewUser(this.myForm.value).subscribe(
       (res: { message: string }) => {
         console.log(res, 'data submitted');
         this.myForm.reset();
         this.successmsg = res.message;
         console.log(this.myForm.value);
+        this.router.navigate(['login'])
 
       }
     );
 
   }
-    Ro() {
-      // console.log('hello');
-    this.router.navigate(['login'])
+  Ro() {
+    // console.log('hello');
   }
 
 }

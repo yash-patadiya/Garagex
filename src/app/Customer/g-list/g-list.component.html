@@ -17,10 +17,8 @@
         <div class="row">
         <div class="col-1 "></div>
         <div class="col-10 justify-content-center align-content-center main" style="background-color: ghostwhite; min-height:150vh;">
-            <!-- <div class="container" style="background-color: beige;height: 400px;width:700px"></div> -->
         <div class="container-fluid">
       
-            <!-- <div class="container" style="background-color: beige;height: 400px;width:700px"></div> -->
 
             <div class="row gap-5 align-content-center mt-3 position-sticky"> 
             <div class="col-2" >
@@ -29,8 +27,9 @@
             </div>
             </div>     
         </div>
-                    <div class="container position-fixed" style="background-color: beige;height: 400px;width:700px;top:50%;left: 50%;transform: translate(-50%,-50%);z-index: 999; overflow-y: auto;overflow-x: hidden;" [hidden]="!showService"><router-outlet></router-outlet></div>
- 
+                    <div class="container position-fixed" style="background-color: beige;height: 400px;width:800px;top:50%;left: 50%;transform: translate(-50%,-50%);z-index: 999; overflow-y: auto;overflow-x: hidden;" [hidden]="!showService"><app-service-list></app-service-list></div>
+                     <div class="container position-fixed" style="background-color: beige;height: 400px;width:45vh;top:50%;left: 50%;transform: translate(-50%,-50%);z-index: 999; overflow-y: auto;overflow-x: hidden;" [hidden]="!showService1"><app-feedback></app-feedback></div>
+
         <div class="row">
             <div class="container-fluid mt-2" style="margin-left:13px;">Ahemdabad > Garages In Ahemdabad > 2879+Listing</div>
         </div>
@@ -130,14 +129,14 @@ Copy</button>
           <div class="row">
              <div class="col-12 d-flex">
                 <div class="col-4"></div>
-                <div class="col-4"><button id="book" routerLink="/service" (click)="onclick()">Book Service</button></div>
+                <div class="col-4"><button id="book" (click)="onclick()">Book Service</button></div>
                 <div class="col-4"></div>
             </div>
          </div>
 <div class="container-fluid">
 <div class="container d-flex ">
 <div class="col-6 d-flex flex-column" style="  border-right-style: solid;margin-right: 15px;"><div class="row" style="margin-left: 3px;">Reviews & Rating</div><div class="d-flex">
-<button class="bg-success rounded-3">4.7</button>&nbsp;<span><h5>24 Ratings</h5></span>&nbsp;&nbsp;&nbsp; <button style="color: cornflowerblue;" class="rounded-4" routerLink="/feedback" (click)="onclick()">Give Your Review</button>
+<button class="bg-success rounded-3">4.7</button>&nbsp;<span><h5>24 Ratings</h5></span>&nbsp;&nbsp;&nbsp; <button style="color: cornflowerblue;" class="rounded-4"  (click)="onclick1()">Give Your Review</button>
 </div>
 </div>
 <div class="col-6 flex-column ml-5"><h6>Start your Review</h6><span class="star-rating">
@@ -174,6 +173,6 @@ Copy</button>
         </div>
        
     </div>
-
 </body>
+
 </html>

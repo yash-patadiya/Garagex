@@ -19,7 +19,7 @@ db.connect(err => {
     if (err) { console.log(err, 'db err'); }
     console.log('Database connected...');
 });
-app.post('http://localhost:4200/registration', (req, res) => {
+app.post('/insertData', (req, res) => {
     console.log(req.body, 'createdata');
 
     let fullname = req.body.name;
@@ -32,7 +32,7 @@ app.post('http://localhost:4200/registration', (req, res) => {
     db.query(qr, (err, result) => {
         if (err) { console.log(err); }
 
-        console.log(result, 'result');    
+        console.log(result, 'result');
         res.send({
             message: 'data inserted',
         });

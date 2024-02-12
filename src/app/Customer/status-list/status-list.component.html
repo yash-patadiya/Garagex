@@ -10,15 +10,14 @@
     <div class="head"><app-header></app-header></div>
     <div id="main">
          <div id="side" ><div class="d-flex"><i class="fa-solid fa-bars" id="Menu"></i><label style="display: none; margin-left: 20px;" id="d1">Menu</label></div><br>
-         <div class="d-flex"><i class="fa-solid fa-square-poll-horizontal" routerLink="/status"></i><label for="" style="display: none; margin-left: 20px;" id="d2">Appointment Status</label></div>
-         <br><div class="d-flex"><i class="fa-solid fa-user-pen" routerLink="/edit-profile"></i><label for="" style="display: none; margin-left: 20px;" id="d3">Edit Profile</label></div>
+         <div class="d-flex"><i class="fa-solid fa-square-poll-horizontal"></i><label for="" style="display: none; margin-left: 20px;" id="d2">Appointment Status</label></div>
+         <br><div class="d-flex"><i class="fa-solid fa-user-pen" (click)="on3()"></i><label for="" style="display: none; margin-left: 20px;" id="d3">Edit Profile</label></div>
 
          </div>
         <div id="page1">
         <div id="client">  
+            <app-status></app-status>
                 <!-- <span><h1>Garages Service List</h1></span> -->
-   <router-outlet></router-outlet>
-
     </div>
     </div>
 </div>

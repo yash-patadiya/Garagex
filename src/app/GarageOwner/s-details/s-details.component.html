@@ -1,103 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Service Selection</title>
+<style>
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type="checkbox"], input[type="number"] {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+</style>
+</head>
+<body>
+    <form>
         <legend>Select Services:</legend>
 
-        <label><input type="checkbox" name="service1" value="Oil Change"> Oil Change - <br><input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service2" value="Tire Rotation"> Tire Rotation - <br><input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service3" value="Brake Inspection"> Brake Inspection - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service4" value="Engine Tune-Up"> Engine Tune-Up - <br><input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service5" value="Wheel Alignment"> Wheel Alignment - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service6" value="Battery Replacement"> Battery Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service7" value="Spark Plug Replacement"> Spark Plug Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service8" value="Air Filter Replacement"> Air Filter Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service9" value="Coolant Flush"> Coolant Flush -<br> <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service10" value="Transmission Service"> Transmission Service - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service11" value="Fuel System Cleaning"> Fuel System Cleaning - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service12" value="Exhaust System Repair"> Exhaust System Repair - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service13" value="Radiator Repair"> Radiator Repair - <br> <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service14" value="Power Steering Flush"> Power Steering Flush - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service15" value="Wheel Bearing Replacement"> Wheel Bearing Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service16" value="Suspension Repair"> Suspension Repair - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service17" value="AC System Recharge"> AC System Recharge - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service18" value="Ignition System Check"> Ignition System Check - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service19" value="Starter Replacement"> Starter Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service20" value="Alternator Replacement"> Alternator Replacement -<input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service21" value="Brake Pad Replacement"> Brake Pad Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service22" value="Headlight Restoration"> Headlight Restoration -<input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service23" value="Cabin Air Filter Replacement"> Cabin Air Filter Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service24" value="Engine Belt Replacement"> Engine Belt Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service25" value="Thermostat Replacement"> Thermostat Replacement -<input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service26" value="Timing Belt Replacement"> Timing Belt Replacement -<input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service27" value="Drive Shaft Replacement"> Drive Shaft Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service28" value="Fuel Pump Replacement"> Fuel Pump Replacement -<input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service29" value="Steering Rack Replacement"> Steering Rack Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service30" value="Clutch Replacement"> Clutch Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service31" value="Wheel Hub Assembly Replacement"> Wheel Hub Assembly Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service32" value="EGR Valve Replacement"> EGR Valve Replacement -<input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service33" value="Oxygen Sensor Replacement"> Oxygen Sensor Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service34" value="PCV Valve Replacement"> PCV Valve Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service35" value="Catalytic Converter Replacement"> Catalytic Converter Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service36" value="Muffler Replacement"> Muffler Replacement -<input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service37" value="Radiator Hose Replacement"> Radiator Hose Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service38" value="Vacuum Pump Replacement"> Vacuum Pump Replacement -<input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service39" value="Intake Manifold Gasket Replacement"> Intake Manifold Gasket Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service40" value="Wheel Speed Sensor Replacement"> Wheel Speed Sensor Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service41" value="Brake Caliper Replacement"> Brake Caliper Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service42" value="Turbocharger Replacement"> Turbocharger Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service43" value="Camshaft Position Sensor Replacement"> Camshaft Position Sensor Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service44" value="Crankshaft Position Sensor Replacement"> Crankshaft Position Sensor Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service45" value="Exhaust Manifold Replacement"> Exhaust Manifold Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service46" value="Fuel Injector Replacement"> Fuel Injector Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service47" value="Idle Air Control Valve Replacement"> Idle Air Control Valve Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service48" value="Oil Pan Gasket Replacement"> Oil Pan Gasket Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service49" value="Serpentine Belt Replacement"> Serpentine Belt Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
-        <label><input type="checkbox" name="service50" value="Valve Cover Gasket Replacement"> Valve Cover Gasket Replacement - <input type="number" id="priceInput" name="price" placeholder="Enter price">
-</label><br>
+<label for="priceInput1"><input type="checkbox" name="service1" value="Oil Change"> Oil Change - <br><input type="number" id="priceInput1" name="price1" placeholder="Enter price"></label><br>
+<label for="priceInput2"><input type="checkbox" name="service2" value="Tire Rotation"> Tire Rotation - <br><input type="number" id="priceInput2" name="price2" placeholder="Enter price"></label><br>
+<label for="priceInput3"><input type="checkbox" name="service3" value="Brake Inspection"> Brake Inspection - <input type="number" id="priceInput3" name="price3" placeholder="Enter price"></label><br>
+<label for="priceInput4"><input type="checkbox" name="service4" value="Engine Tune-Up"> Engine Tune-Up - <br><input type="number" id="priceInput4" name="price4" placeholder="Enter price"></label><br>
+<label for="priceInput5"><input type="checkbox" name="service5" value="Wheel Alignment"> Wheel Alignment - <input type="number" id="priceInput5" name="price5" placeholder="Enter price"></label><br>
+<label for="priceInput6"><input type="checkbox" name="service6" value="Battery Replacement"> Battery Replacement - <input type="number" id="priceInput6" name="price6" placeholder="Enter price"></label><br>
+<label for="priceInput7"><input type="checkbox" name="service7" value="Spark Plug Replacement"> Spark Plug Replacement - <input type="number" id="priceInput7" name="price7" placeholder="Enter price"></label><br>
+<label for="priceInput8"><input type="checkbox" name="service8" value="Air Filter Replacement"> Air Filter Replacement - <input type="number" id="priceInput8" name="price8" placeholder="Enter price"></label><br>
+<label for="priceInput9"><input type="checkbox" name="service9" value="Coolant Flush"> Coolant Flush -<br> <input type="number" id="priceInput9" name="price9" placeholder="Enter price"></label><br>
+<label for="priceInput10"><input type="checkbox" name="service10" value="Transmission Service"> Transmission Service - <input type="number" id="priceInput10" name="price10" placeholder="Enter price"></label><br>
+<label for="priceInput11"><input type="checkbox" name="service11" value="Fuel System Cleaning"> Fuel System Cleaning - <input type="number" id="priceInput11" name="price11" placeholder="Enter price"></label><br>
+<label for="priceInput12"><input type="checkbox" name="service12" value="Exhaust System Repair"> Exhaust System Repair - <input type="number" id="priceInput12" name="price12" placeholder="Enter price"></label><br>
+<label for="priceInput13"><input type="checkbox" name="service13" value="Radiator Repair"> Radiator Repair - <br> <input type="number" id="priceInput13" name="price13" placeholder="Enter price"></label><br>
+<label for="priceInput14"><input type="checkbox" name="service14" value="Power Steering Flush"> Power Steering Flush - <input type="number" id="priceInput14" name="price14" placeholder="Enter price"></label><br>
+<label for="priceInput15"><input type="checkbox" name="service15" value="Wheel Bearing Replacement"> Wheel Bearing Replacement - <input type="number" id="priceInput15" name="price15" placeholder="Enter price"></label><br>
+<label for="priceInput16"><input type="checkbox" name="service16" value="Suspension Repair"> Suspension Repair - <input type="number" id="priceInput16" name="price16" placeholder="Enter price"></label><br>
+<label for="priceInput17"><input type="checkbox" name="service17" value="AC System Recharge"> AC System Recharge - <input type="number" id="priceInput17" name="price17" placeholder="Enter price"></label><br>
+<label for="priceInput18"><input type="checkbox" name="service18" value="Ignition System Check"> Ignition System Check - <input type="number" id="priceInput18" name="price18" placeholder="Enter price"></label><br>
+<label for="priceInput19"><input type="checkbox" name="service19" value="Starter Replacement"> Starter Replacement - <input type="number" id="priceInput19" name="price19" placeholder="Enter price"></label><br>
+<label for="priceInput20"><input type="checkbox" name="service20" value="Alternator Replacement"> Alternator Replacement -<input type="number" id="priceInput20" name="price20" placeholder="Enter price"></label><br>
+<label for="priceInput21"><input type="checkbox" name="service21" value="Brake Pad Replacement"> Brake Pad Replacement - <input type="number" id="priceInput21" name="price21" placeholder="Enter price"></label><br>
+<label for="priceInput22"><input type="checkbox" name="service22" value="Headlight Restoration"> Headlight Restoration -<input type="number" id="priceInput22" name="price22" placeholder="Enter price"></label><br>
+<label for="priceInput23"><input type="checkbox" name="service23" value="Cabin Air Filter Replacement"> Cabin Air Filter Replacement - <input type="number" id="priceInput23" name="price23" placeholder="Enter price"></label><br>
+<label for="priceInput24"><input type="checkbox" name="service24" value="Engine Belt Replacement"> Engine Belt Replacement - <input type="number" id="priceInput24" name="price24" placeholder="Enter price"></label><br>
+<label for="priceInput25"><input type="checkbox" name="service25" value="Thermostat Replacement"> Thermostat Replacement -<input type="number" id="priceInput25" name="price25" placeholder="Enter price"></label><br>
+<label for="priceInput26"><input type="checkbox" name="service26" value="Timing Belt Replacement"> Timing Belt Replacement -<input type="number" id="priceInput26" name="price26" placeholder="Enter price"></label><br>
+<label for="priceInput27"><input type="checkbox" name="service27" value="Drive Shaft Replacement"> Drive Shaft Replacement - <input type="number" id="priceInput27" name="price27" placeholder="Enter price"></label><br>
+<label for="priceInput28"><input type="checkbox" name="service28" value="Fuel Pump Replacement"> Fuel Pump Replacement -<input type="number" id="priceInput28" name="price28" placeholder="Enter price"></label><br>
+<label for="priceInput29"><input type="checkbox" name="service29" value="Steering Rack Replacement"> Steering Rack Replacement - <input type="number" id="priceInput29" name="price29" placeholder="Enter price"></label><br>
+<label for="priceInput30"><input type="checkbox" name="service30" value="Clutch Replacement"> Clutch Replacement - <input type="number" id="priceInput30" name="price30" placeholder="Enter price"></label><br>
+<label for="priceInput31"><input type="checkbox" name="service31" value="Wheel Hub Assembly Replacement"> Wheel Hub Assembly Replacement - <input type="number" id="priceInput31" name="price31" placeholder="Enter price"></label><br>
+<label for="priceInput32"><input type="checkbox" name="service32" value="EGR Valve Replacement"> EGR Valve Replacement -<input type="number" id="priceInput32" name="price32" placeholder="Enter price"></label><br>
+<label for="priceInput33"><input type="checkbox" name="service33" value="Oxygen Sensor Replacement"> Oxygen Sensor Replacement - <input type="number" id="priceInput33" name="price33" placeholder="Enter price"></label><br>
+<label for="priceInput34"><input type="checkbox" name="service34" value="PCV Valve Replacement"> PCV Valve Replacement - <input type="number" id="priceInput34" name="price34" placeholder="Enter price"></label><br>
+<label for="priceInput35"><input type="checkbox" name="service35" value="Catalytic Converter Replacement"> Catalytic Converter Replacement - <input type="number" id="priceInput35" name="price35" placeholder="Enter price"></label><br>
+<label for="priceInput36"><input type="checkbox" name="service36" value="Muffler Replacement"> Muffler Replacement -<input type="number" id="priceInput36" name="price36" placeholder="Enter price"></label><br>
+<label for="priceInput37"><input type="checkbox" name="service37" value="Radiator Hose Replacement"> Radiator Hose Replacement - <input type="number" id="priceInput37" name="price37" placeholder="Enter price"></label><br>
+<label for="priceInput38"><input type="checkbox" name="service38" value="Vacuum Pump Replacement"> Vacuum Pump Replacement -<input type="number" id="priceInput38" name="price38" placeholder="Enter price"></label><br>
+<label for="priceInput39"><input type="checkbox" name="service39" value="Intake Manifold Gasket Replacement"> Intake Manifold Gasket Replacement - <input type="number" id="priceInput39" name="price39" placeholder="Enter price"></label><br>
+<label for="priceInput40"><input type="checkbox" name="service40" value="Wheel Speed Sensor Replacement"> Wheel Speed Sensor Replacement - <input type="number" id="priceInput40" name="price40" placeholder="Enter price"></label><br>
+<label for="priceInput41"><input type="checkbox" name="service41" value="Brake Caliper Replacement"> Brake Caliper Replacement - <input type="number" id="priceInput41" name="price41" placeholder="Enter price"></label><br>
+<label for="priceInput42"><input type="checkbox" name="service42" value="Turbocharger Replacement"> Turbocharger Replacement - <input type="number" id="priceInput42" name="price42" placeholder="Enter price"></label><br>
+<label for="priceInput43"><input type="checkbox" name="service43" value="Camshaft Position Sensor Replacement"> Camshaft Position Sensor Replacement - <input type="number" id="priceInput43" name="price43" placeholder="Enter price"></label><br>
+<label for="priceInput44"><input type="checkbox" name="service44" value="Crankshaft Position Sensor Replacement"> Crankshaft Position Sensor Replacement - <input type="number" id="priceInput44" name="price44" placeholder="Enter price"></label><br>
+<label for="priceInput45"><input type="checkbox" name="service45" value="Exhaust Manifold Replacement"> Exhaust Manifold Replacement - <input type="number" id="priceInput45" name="price45" placeholder="Enter price"></label><br>
+<label for="priceInput46"><input type="checkbox" name="service46" value="Fuel Injector Replacement"> Fuel Injector Replacement - <input type="number" id="priceInput46" name="price46" placeholder="Enter price"></label><br>
+<label for="priceInput47"><input type="checkbox" name="service47" value="Idle Air Control Valve Replacement"> Idle Air Control Valve Replacement - <input type="number" id="priceInput47" name="price47" placeholder="Enter price"></label><br>
+<label for="priceInput48"><input type="checkbox" name="service48" value="Oil Pan Gasket Replacement"> Oil Pan Gasket Replacement - <input type="number" id="priceInput48" name="price48" placeholder="Enter price"></label><br>
+<label for="priceInput49"><input type="checkbox" name="service49" value="Serpentine Belt Replacement"> Serpentine Belt Replacement - <input type="number" id="priceInput49" name="price49" placeholder="Enter price"></label><br>
+<label for="priceInput50"><input type="checkbox" name="service50" value="Valve Cover Gasket Replacement"> Valve Cover Gasket Replacement - <input type="number" id="priceInput50" name="price50" placeholder="Enter price"></label><br>
+
+    </form>
+</body>
+</html>
 

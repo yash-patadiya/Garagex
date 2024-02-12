@@ -49,7 +49,9 @@ toggleMenu(): void {
 
   console.log('A after:', this.A);
 }
+on3(){
 
+}
 
   }
      

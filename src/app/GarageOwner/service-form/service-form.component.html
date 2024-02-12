@@ -3,7 +3,7 @@
 <div class='row'>
 <div class='col'></div>
 <div class='col1'>
-<h1 style='text-align:center;color:blue;margin-top:-10vh; margin-bottom:6vh;'>GarageX | Service Details</h1>
+<h1 style='text-align:center;color:rgb(213, 213, 227);margin-top:-10vh; margin-bottom:6vh;'>GarageX | Service Details</h1>
 <hr style='margin-bottom:4vh; width:60vh;'>
 <form>
 
@@ -19,18 +19,20 @@
 <label style='font-weight:bold; font-size:2.5vh;'>24*7</label><br>
 Yes<input type='radio' name="time" value="yes"/>&nbsp;&nbsp;No<input type="radio" name="time" value="No"/>
 </div>
-<div style="background-color: #fff;height: 500px;width: 400px;position: absolute;z-index: 999;top: 20%;overflow-x: auto;" [hidden]="!showRouter" ><router-outlet></router-outlet></div>
+<div style="background-color: #fff;height: 500px;width: 400px;position: absolute;z-index: 999;top:10%;overflow-x: auto;" [hidden]="!showRouter" ><app-s-details></app-s-details></div>
+<div style="background-color: #fff;height: 500px;width: 400px;position: absolute;z-index: 999;top: 20%;overflow-x: auto;" [hidden]="!showRouter1" ><app-stype></app-stype></div>
+
 <div class="custom-dropdown">
-    <button class="dropdown-button" routerLink="/service-type" (click)="showFunction($event)">Select Vehicle Type</button>
+    <button class="dropdown-button"  (click)="showFunction($event)">Select Vehicle Type</button>
     <div class="dropdown-content">
     </div>
 </div>
 <div class="custom-dropdown">
-    <button class="dropdown-button" routerLink="/s-details" (click)="showFunction($event)">Select Vehicle Service</button>
+    <button class="dropdown-button"  (click)="showFunction1($event)">Select Vehicle Service</button>
 </div>
 
 
-<div><button type='submit' style='margin-left:42px;text-align:center; background-color:lightblue;width:28vh;height: 5vh;' (click)="onClick()"><b>Sign in</b></button></div>
+<div><button type='submit' style='margin-left:42px;text-align:center; background-color:lightblue;width:28vh;height: 5vh;border-radius: 50px;' (click)="onClick()"><b>Sign in</b></button></div>
 
 </form>
 </div>
